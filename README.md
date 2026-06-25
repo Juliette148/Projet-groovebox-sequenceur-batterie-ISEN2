@@ -86,6 +86,16 @@ Le projet utilise les bibliothèques suivantes :
 
 Toutes les bibliothèques sont disponibles depuis le Teensyduino ou le gestionnaire de bibliothèques Arduino.
 
+# Structure du projet
+
+Le code source est organisé en plusieurs fichiers afin de faciliter la lecture et la maintenance du projet :
+
+* **GrooveboxSampler.ino**: fichier principal contenant les variables globales, les prototypes, `setup()` et `loop()`.
+* **Affichage.ino**: gestion de l'affichage sur l'écran OLED.
+* **AudioJack.ino**: gestion de la sortie audio et détection automatique de la prise Jack.
+* **AudioSauvegarde.ino**: lecture des sons, effets audio, sauvegarde et chargement des séquences.
+* **Interface.ino**: gestion de l'interface utilisateur et des interactions avec l'encodeur.
+
 # Compilation
 
 ## Prérequis
@@ -98,7 +108,7 @@ Installer:
 
 Sélectionner: Board > Teensy 4.1
 
-Compiler le projet puis téléverser le firmware sur la Teensy.
+Ouvrir le dossier GrooveboxSampler dans l'IDE Arduino. Le fichier principal est GrooveboxSampler.ino. Compiler ensuite le projet puis téléverser le programme sur la Teensy 4.1.
 
 # Carte SD
 
